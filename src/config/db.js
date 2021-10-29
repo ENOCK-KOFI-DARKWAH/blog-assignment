@@ -6,7 +6,7 @@ const DATABASE_URL = process.env.DATABASE_URL;
 const connectDb = () => {
   return mongoose.connect(DATABASE_URL, { useUnifiedTopology: true, useNewUrlParser: true }, err => {
     if (err) {
-      console.log("Database Connection failed.");
+      console.log("Connection to Database failed.");
     }
     else{
       console.log("Database connection successful.");
